@@ -1,52 +1,37 @@
 
-# Python cache
 __pycache__/
 *.py[cod]
-*$py.class
 
 # Virtual environments
 venv/
 .venv/
 env/
-ENV/
 
-# IDE and editor files
+# IDE
 .vscode/
 .idea/
-*.swp
 
-# Jupyter Notebook
-.ipynb_checkpoints/
-
-# Environment variables and secrets
+# Environment variables
 .env
 .env.*
 !.env.example
 
-# Model files
-*.pkl
-*.joblib
-*.h5
-*.pt
-*.pth
+# Ignore generated files, but retain deployment artifacts
+outputs/*
+!outputs/model_results.json
 
-# Generated outputs
-outputs/
-models/
+models/*
+!models/best_model.joblib
+
+# Jupyter
+.ipynb_checkpoints/
 
 # Logs
 *.log
-logs/
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
-desktop.ini
 
-# Testing and coverage
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Streamlit
+# Streamlit secrets
 .streamlit/secrets.toml

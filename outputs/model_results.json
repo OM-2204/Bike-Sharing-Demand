@@ -1,0 +1,31 @@
+{
+  "validation_metrics": {
+    "LinearRegression": {
+      "MAE": 99.63390068715289,
+      "RMSE": 124.16721356505704,
+      "R2": 0.6919472984159519
+    },
+    "RandomForest": {
+      "MAE": 46.02255934723359,
+      "RMSE": 71.93944552732866,
+      "R2": 0.8965940988425357
+    },
+    "XGBoost": {
+      "MAE": 44.87190628051758,
+      "RMSE": 66.91219030145031,
+      "R2": 0.9105414748191833
+    }
+  },
+  "selected_model": "XGBoost",
+  "held_out_test_metrics": {
+    "MAE": 42.43229675292969,
+    "RMSE": 66.23917585514444,
+    "R2": 0.9045605659484863
+  },
+  "split": {
+    "train_rows": 12165,
+    "validation_rows": 2607,
+    "test_rows": 2607,
+    "strategy": "Chronological 70% / 15% / 15%"
+  }
+}
